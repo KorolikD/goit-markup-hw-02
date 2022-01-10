@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Веб студия WebStudio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -13,54 +14,64 @@
     <!-- Хедер -->
     <header>
         <nav>
-            <a href="/">
-                WebStudio
+            <a class="logo" href="/">
+                <span class="logo-accent">Web</span>Studio
             </a>
-
-            <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+    
+            <ul class="site-nav list">
+                <li><a class="link" href="./index.html">Студия</a></li>
+                <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="link" href="">Контакты</a></li>
             </ul>
         </nav>
-
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+    
+        <ul class="contact list">
+            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
 
     <!-- Основной контент -->
     <main>
-        <section>
-            <h2>Портфолио</h2>
+        <section class="section">
+            <h2 class="section-title">Портфолио</h2>
             <!-- Кнопки -->
-            <ul>
+            <ul class="button list">
                 <li>
-                    <button type="button">Все</button>
+                    <button class="button secondary" type="button">
+                        Все
+                    </button>
                 </li>
                 <li>
-                    <button type="button">Веб-сайты</button>
+                    <button class="button secondary" type="button">
+                        Веб-сайты
+                    </button>
                 </li>
                 <li>
-                    <button type="button">Приложения</button>
+                    <button class="button secondary" type="button">
+                        Приложения
+                    </button>
                 </li>
                 <li>
-                    <button type="button">Дизайн</button>
+                    <button class="button secondary" type="button">
+                        Дизайн
+                    </button>
                 </li>
                 <li>
-                    <button type="button">Маркетинг</button>
+                    <button class="button secondary" type="button">
+                        Маркетинг
+                    </button>
                 </li>
             </ul>
             <!-- Список проектов -->
-            <ul>
+            <ul class="project list">
                 <li>
                     <img 
                         src="./images/portfolio-1.jpg" 
                         alt="На экране ноутбука главная страница сайта"
                         width="370"
                     >
-                    <h3>Технокряк</h3>
+                    <h3 class="title">Технокряк</h3>
                     <p>
                         Веб-сайт
                     </p>
@@ -71,7 +82,7 @@
                         alt="Два баскетболиста"
                         width="370"
                     >
-                    <h3>Постер <span lang="en">New Orlean vs Golden Star</span> </h3>
+                    <h3 class="title">Постер <span lang="en">New Orlean vs Golden Star</span> </h3>
                     <p>
                         Дизайн
                     </p>
@@ -82,7 +93,7 @@
                         alt="Логотип ресторана"
                         width="370"
                     >
-                    <h3>Ресторан <span lang="en">Seafood</span></h3>
+                    <h3 class="title">Ресторан <span lang="en">Seafood</span></h3>
                     <p>
                         Приложение
                     </p>
@@ -93,7 +104,7 @@
                         alt="Наушники закрытого типа"
                         width="370"
                     >
-                    <h3>Проект <span lang="en">Prime</span></h3>
+                    <h3 class="title">Проект <span lang="en">Prime</span></h3>
                     <p>
                         Маркетинг
                     </p>
@@ -104,7 +115,7 @@
                         alt="Две картонные коробки"
                         width="370"
                     >
-                    <h3>Проект <span lang="en">Boxes</span></h3>
+                    <h3 class="title">Проект <span lang="en">Boxes</span></h3>
                     <p>
                         Приложение
                     </p>
@@ -115,7 +126,7 @@
                         alt="На экране монитора главная страница сайта"
                         width="370"
                     >
-                    <h3 lang="en">Inspiration has no Borders</h3>
+                    <h3 class="title" lang="en">Inspiration has no Borders</h3>
                     <p>
                         Веб-сайт
                     </p>
@@ -126,7 +137,7 @@
                         alt="Раскрытая книга" 
                         width="370"
                     >
-                    <h3>Издание <span lang="en">Limited Edition</span></h3>
+                    <h3 class="title">Издание <span lang="en">Limited Edition</span></h3>
                     <p>
                         Дизайн
                     </p>
@@ -137,7 +148,7 @@
                         alt="Бирка с названием компании" 
                         width="370"
                     >
-                    <h3>Проект <span lang="en">LAB</span></h3>
+                    <h3 class="title">Проект <span lang="en">LAB</span></h3>
                     <p>
                         Маркетинг
                     </p>
@@ -148,7 +159,7 @@
                         alt="Человек печатает на ноутбуке" 
                         width="370"
                     >
-                    <h3 lang="en">Growing Business</h3>
+                    <h3 class="title" lang="en">Growing Business</h3>
                     <p>
                         Приложение
                     </p>
@@ -158,23 +169,23 @@
     </main>
 
     <!-- Футер -->
-    <footer>
-        <a href="/">
-            WebStudio
+    <footer class="footer">
+        <a class="logo dark" href="/">
+            <span class="logo-accent">Web</span>Studio
         </a>
-
+    
         <address>
-            <ul>
+            <ul class="adress list">
                 <li>
-                    <a href="https://goo.gl/maps/HY3VaiPeCCJGnbPLA" target="_blank" rel="noopener">
+                    <a class="link map" href="https://goo.gl/maps/HY3VaiPeCCJGnbPLA" target="_blank" rel="noopener">
                         г. Киев, пр-т Леси Украинки, 26
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
         </address>

@@ -36,19 +36,32 @@ Roboto – 400, 500, 700, 900 */
 
   --button-text-colour: #ffffff;
   --button-secondary-background-colour: #f5f4fa;
+  --button-focus-color: #188ce8;
 
   --header-line: #ececec;
   --border-elements: #eeeeee;
 }
 
 body {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .list {
@@ -148,8 +161,7 @@ body {
 
 .button.primary:hover,
 .button.primary:focus {
-  color: var(--title-text-color);
-  background-color: var(--button-secondary-background-colour);
+  background-color: var(--button-focus-color);
 }
 
 /* Секции */
@@ -196,7 +208,7 @@ body {
 
 .team .text {
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
 }
 
